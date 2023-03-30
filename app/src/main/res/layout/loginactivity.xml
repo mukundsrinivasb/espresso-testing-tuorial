@@ -13,22 +13,20 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="250dp"
         android:layout_marginEnd="30dp"
-        android:background="#A27774"
-        android:backgroundTint="#E82020"
         app:boxCornerRadiusBottomEnd="10dp"
         app:boxCornerRadiusBottomStart="10dp"
         app:boxCornerRadiusTopEnd="10dp"
         app:boxCornerRadiusTopStart="10dp"
-        app:boxStrokeColor="#000000"
         app:boxStrokeWidth="50dp"
-        app:counterTextColor="#B7B7B7"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/login"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:backgroundTint="#7BFFE1"
             android:background="@color/off_white"
             android:hint="login" />
     </com.google.android.material.textfield.TextInputLayout>
@@ -52,21 +50,27 @@
         app:passwordToggleEnabled="true">
 
         <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/off_white"
             android:hint="password"
-            android:backgroundTint="#A9105F"
+            android:backgroundTint="#7BFFE1"
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.button.MaterialButton
+        android:id="@+id/button"
         android:layout_width="176dp"
-        android:layout_height="80dp"
+        android:layout_height="50dp"
         android:layout_marginStart="104dp"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="64dp"
+        android:backgroundTint="#7BFFE1"
+        android:hint="login!"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textInputLayout"></com.google.android.material.button.MaterialButton>
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout">
+
+    </com.google.android.material.button.MaterialButton>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
