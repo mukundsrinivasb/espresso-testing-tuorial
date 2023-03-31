@@ -7,6 +7,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.button.MaterialButton;
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.android.material.textview.MaterialTextView;
 
 public class LoginActivity extends AppCompatActivity {
@@ -15,8 +16,8 @@ public class LoginActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.loginactivity);
         MaterialButton loginButton = findViewById(R.id.button);
-        MaterialTextView loginView = findViewById(R.id.login);
-        MaterialTextView passWord = findViewById(R.id.password);
+        TextInputEditText loginView = findViewById(R.id.login);
+        TextInputEditText passWord = findViewById(R.id.password);
         loginButton.setOnClickListener(v -> {
                     if (loginView.getText().toString().equals("this@that.com") && passWord.getText().toString().equals("password")) {
                         Toast.makeText(this,"Well that checks out",Toast.LENGTH_LONG).show();
